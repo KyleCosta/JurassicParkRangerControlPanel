@@ -14,5 +14,5 @@ let remainingDays = Math.ceil(
 
 );
 
-document.write(remainingDays + " days until velociraptor eggs hatch");
+document.write(`<div class="countdown">${remainingDays} days until velociraptor eggs hatch</div>`);
 

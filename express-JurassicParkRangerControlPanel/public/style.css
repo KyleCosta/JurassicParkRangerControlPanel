@@ -1,29 +1,305 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: gray;
+  display:grid;
+  grid-template: repeat(20,100px) / repeat(19,100px);
+  width:1900px;
+  height:2000px;
+  font: 25px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: yellow;
+  background-color: rgb(10, 225, 10);
+}
+
+.eggs {
+ height:300px;
+ width:300px;
+ margin-left:20px;
+ margin-bottom:40px;
+ border: 10px solid gray;
+ border-top:20px solid gray;
+ border-radius: 5px;
+}
+
+.countdown {
+  margin-bottom: 150px;
+  margin-right: 20px
+}
+
+.Logo {
+  height: 100px;
+  width: 100px;
+  margin-left: 20px;
+  border-radius: 50%;
+  border: 3px solid rgb(250, 250, 197);
+}
+
+nav {
+  display:grid;
+  grid-template: 100px / repeat(19,100px);
+  position:fixed;
+  top:0;
+  width: 100%;
+  height: 100px;
+  border-bottom:5px yellow;
+  box-shadow: 0 10px 20px rgb(250, 250, 197);
+  background-color: red;
+  z-index: 8;
 }
 
 a {
-  color: #00B7FF;
+  background-color:yellow ;
+  box-shadow: 0 0 20px rgb(250, 250, 197);
+  font-size: 25px;
+  border-radius: 8px;
+  font-family: fantasy;
+  color: black;
+  grid-area: 1/3/1/span 4;
+  text-decoration: none;
+  align-self: center;
+  justify-self: start;
 }
 
-main {
-  color:blueviolet;
+h3 {
+  color:yellow;
+  font-size: 30px;
+}
+
+h3.incubationcam {
+  color:white;
+  margin-left: 50px;
+}
+
+.incubations-container {
+  display:grid;
+  grid-area:12/10/18/span 6;
+  border:5px solid black;
+  border-radius: 5px;
+  background-color: black;
+  box-shadow:4px 4px rgb(250, 250, 197);
+}
+
+.incubations {
+  display:grid;
+  grid-area:12/10/17/span 6;
+}
+
+.weatheralerts-container {
+  grid-area: 4/10/10/span 6;
+  border-radius: 5px;
+  background-color: black;
+  box-shadow:4px 4px rgb(250, 250, 197);
+}
+
+.weatheralerts {
+  grid-area: 4/10/9/span 6;
+}
+
+.control-panel-containers-container {
+  display:grid;
+  grid-area: 4/1/15/span 6;
+  border: 10px solid;
+  border-radius: 8px;
+  background-color: black;
+  color:black;
+}
+
+.control-panel-containers {
+  display:grid;
+  grid-area: 4/1/14/span 6;
+  gap:10px;
+  color:black;
+}
+
+.control-panel-container1 {
+  display:grid;
+  grid-template-areas: 
+  'Trexb Trexp';
+  grid-template-columns: 1fr 5fr;
+}
+  .control-panel-container2 {
+  display: grid;
+  grid-template-areas: 
+  'Velociraptorb Velociraptorp';
+  grid-template-columns: 1fr 5fr ;
+  }
+  
+  .control-panel-container3 {
+  display: grid;
+  grid-template-areas: 
+  'Vehicleb Vehiclep';
+  grid-template-columns: 1fr 5fr ;
+  }
+
+  .control-panel-container4 {
+  display: grid;
+  grid-template-areas: 
+  'Controlb Controlp';
+  grid-template-columns: 1fr 5fr ;
+  }
+
+  .control-panel-container5 {
+  display: grid;
+  grid-template-areas: 
+  'Herbivoreb Herbivorep';
+  grid-template-columns: 1fr 5fr ;
+  }
+  
+  .control-panel-container6 {
+  display: grid;
+  grid-template-areas: 
+  'Carnivoreb Carnivorep';
+  grid-template-columns: 1fr 5fr ;
+  }
+  
+  .control-panel-container7 {
+  display: grid;
+  grid-template-areas: 
+  'Perimeterb Perimeterp' ;
+  grid-template-columns: 1fr 5fr ;
+}
+
+.control-panel-containers button {
+  height:50px;
+  width:50px;
   border-radius: 50%;
-  text-align: right;
+  background-color: red;
+  border: 4px solid black;
+  justify-self: start;
+  align-self: center;
+}
+
+.control-panel-containers h2  {
+  align-self: center;
+}
+
+.control-panel-container1, .control-panel-container2,.control-panel-container3,
+.control-panel-container4, .control-panel-container5, .control-panel-container6,
+.control-panel-container7 {
+  background-color: whitesmoke;
+  border:5px solid rgb(250, 250, 197);
+  box-shadow: 0 0 7px rgb(250, 250, 197);
+  font-size: 15px;
+}
+
+.Trexb {
+  background-color: red;
+}
+
+/* box-sizing:border-box;*/
+
+/*cellphone* {
+  margin:0;
+  padding:0;
+}
+
+body {
+  display:grid;
+  grid-template: repeat(37,20px) / repeat(18,20px);
+  width:360px;
+  height:740px;
+  font: 6px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: rgb(10, 225, 10);
+}
+
+nav {
+  grid-area: 1/1/4/span 18; 
+  background-color: red;
+}
+
+a {
+  color: yellow;
+  
 }
 
 h3 {
   color:blueviolet;
-  font-size: large;
+  
 }
 
-h2 {
-  text-align: center;
+.incubations {
+  grid-area:15/15/34/span 2;
 }
 
-.weatheralertheading {
-  text-align: right;
+.weatheralerts {
+  grid-area: 15/10/34/span 4;
+  
 }
+
+.control-panel-containers {
+  display:grid;
+  grid-area: 15/2/34/span 6;
+ 
+}
+
+.control-panel-container1 {
+  display:grid;
+  border:1px solid;
+  grid-template-areas: 
+  'Trexb Trexp';
+  grid-template-columns: 1fr 5fr;
+}
+  .control-panel-container2 {
+    display: grid;
+    border: 1px solid;
+    grid-template-areas: 
+    'Velociraptorb Velociraptorp';
+  grid-template-columns: 1fr 5fr ;
+  }
+  
+  .control-panel-container3 {
+    display: grid;
+    border:1px solid;
+    grid-template-areas: 
+    'Vehicleb Vehiclep';
+  grid-template-columns: 1fr 5fr ;
+  }
+
+  .control-panel-container4 {
+    display: grid;
+    border:1px solid;
+    grid-template-areas: 
+    'Controlb Controlp';
+  grid-template-columns: 1fr 5fr ;
+  }
+
+  .control-panel-container5 {
+    display: grid;
+    border:1px solid;
+    grid-template-areas: 
+    'Herbivoreb Herbivorep';
+  grid-template-columns: 1fr 5fr ;
+  }
+  
+  .control-panel-container6 {
+    display: grid;
+    border:1px solid;
+    grid-template-areas: 
+    'Carnivoreb Carnivorep';
+    grid-template-columns: 1fr 5fr ;
+  }
+  
+  .control-panel-container7 {
+    display: grid;
+    border:1px solid;
+    grid-template-areas: 
+    'Perimeterb Perimeterp' ;
+  grid-template-columns: 1fr 5fr ;
+}
+
+.control-panel-containers button {
+  height:5px;
+  width:5px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.control-panel-container1, .control-panel-container2,.control-panel-container3,
+.control-panel-container4, .control-panel-container5, .control-panel-container6,
+.control-panel-container7 {
+  background-color: whitesmoke;
+}*/
 
