@@ -1,4 +1,4 @@
-const apiKey = '218529a3b00e436293dde07e1d7a2e2c';
+const apiKey = '';
 console.log('Hello world!');
 
 async function fetchWeather() {
