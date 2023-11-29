@@ -2,14 +2,22 @@
 
 This application was made through Express.js and serves two html routes. 
 
-This app has the following features:
+This app has the following features from the project features list:
 
-1.It calculates and displays data based on an external factor (the current date).
+1.Create a node.js web server using a modern framework such as Express.js or Fastify.  Serve at least one route that your app uses (must serve more than just the index.html file).
+
+This app is running on a node server using Express.js.
+
+2.Calculate and display data based on an external factor (ex: get the current date, and display how many days remaining until some event)
+
+It calculates and displays data based on an external factor (the current date).
 This is done in hatchcountdown.js to display the days left until the velociraptor eggs hatch.
 
-2.Retrieves data from a third party API and uses that data to display something in the app. This is done in api.js to display severe weather alerts in the San diego area. If there is nothing showing it is because there are no severe weather alerts currently.
+3.Retrieve data from a third-party API and use it to display something within your app.
 
-3.Has buttons on a panel that turn on and off. This is done in button.js.
+Retrieves data from a third party API and uses that data to display something in the app. This is done in api.js to display severe weather alerts in the San diego area. If there is nothing showing it is because there are no severe weather alerts currently.
+
+
 
 To run this app:
 
