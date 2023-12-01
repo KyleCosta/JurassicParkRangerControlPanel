@@ -15,7 +15,7 @@ This is done in hatchcountdown.js to display the days left until the velocirapto
 
 3.Retrieve data from a third-party API and use it to display something within your app.
 
-Retrieves data from a third party API and uses that data to display something in the app. This is done in api.js to display severe weather alerts in the San diego area. If there is nothing showing it is because there are no severe weather alerts currently.
+This is done in api.js to display severe weather alerts in the San diego area. Normally the weather alerts will show inside the severe weather alerts container under the text "Severe Weather Alerts", but if there are no severe weather alerts at the moment then the API returns an empty array and the Severe Weather Alerts container will be blank except for "Severe Weather Alerts". The ranger using this interface would then assume that there are no severe weather alerts. To show that this feature does work, if there are no severe weather alerts you can see the results returned after right clicking the page then going to inspect > console > object > alerts.
 
 
 
@@ -36,6 +36,8 @@ To run this app:
 7.In your terminal type npm run devstart
 
 8.In your browser go to localhost:3000
+
+9. Click the buttons on the left to turn the power on (you may need to double click) HURRY BEFORE THE DINOSAURS GET OUT!!
 
 
 
