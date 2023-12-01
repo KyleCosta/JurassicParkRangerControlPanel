@@ -34,3 +34,8 @@ To run this app:
 6.In your browser go to localhost:3000
 
 7.Copy and paste the API key given into the empty string in api.js.
+
+
+Possible troubleshooting:
+
+If you are missing a dependency like Cookie Parser etc. you may need to type npm install dependencies in your terminal
