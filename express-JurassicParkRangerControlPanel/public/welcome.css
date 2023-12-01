@@ -103,6 +103,7 @@ p.conduct{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 20px;
     padding:5px;
+    overflow: scroll;
 }
 
 ul.escape {
