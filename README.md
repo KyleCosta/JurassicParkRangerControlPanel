@@ -29,11 +29,12 @@ To run this app:
 
 4.In your terminal type cd express-JurassicParkRangerControlPanel
 
-5.In your terminal type npm run devstart
+5.Copy and paste the API key given into the empty string in api.js on line 1 and hit save.
 
-6.In your browser go to localhost:3000
+6.In your terminal type npm run devstart
 
-7.Copy and paste the API key given into the empty string in api.js.
+7.In your browser go to localhost:3000
+
 
 
 Possible troubleshooting:
