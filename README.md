@@ -21,13 +21,15 @@ Retrieves data from a third party API and uses that data to display something in
 
 To run this app:
 
-1.Install nodejs, and npm. Update them to the most current versions.
+1.Install nodejs. Update to the most current version.
 
 2.Install express and update it to the most current version.
 
 3.In visual studio code navigate to the folder where you cloned the repo.
 
 4.In your terminal in visual studio code type cd express-JurassicParkRangerControlPanel
+
+5.Install npm. Update to the most current version.
 
 5.Copy and paste the API key given into the empty string in api.js on line 1 and hit save.
 
